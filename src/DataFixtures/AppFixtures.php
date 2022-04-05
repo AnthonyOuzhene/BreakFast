@@ -93,7 +93,7 @@ class AppFixtures extends Fixture
 
         for ($i = 0; $i < $productNumber; $i++) {
             $product = new Product;
-            $product->setName($faker->name());
+            $product->setName($faker->word());
             $product->setPrice($faker->randomFloat(2, 0, 10));
             $product->setDescription($faker->realText(150));
             $product->setPicture('https://picsum.photos/id/' . ($i + 1) . '/200/300');
