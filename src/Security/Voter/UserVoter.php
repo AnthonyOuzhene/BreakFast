@@ -5,11 +5,20 @@ namespace App\Security\Voter;
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
 use Symfony\Component\Security\Core\Authorization\Voter\Voter;
 use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Security\Core\Security;
+
 
 class UserVoter extends Voter
 {
     public const EDIT = 'PROFILE_EDIT';
     public const VIEW = 'PROFILE_VIEW';
+
+    private $security;
+    
+    public function __construct(Security $security)
+    {
+        $this->security = $security;
+    }
 
     protected function supports(string $attribute, $subject): bool
     {
@@ -55,7 +64,7 @@ class UserVoter extends Voter
                 // logic to determine if the user can VIEW
                 // return true or false
 
-                if ($user !== $subject->getUserIdentifier() && ! $this->security->isGranted('ROLE_ADMIN')) {
+                if ($user->getUserIdentifier() !== $subject->getUserIdentifier() && ! $this->security->isGranted('ROLE_ADMIN')) {
                     return false;
                 }
                 return true;
