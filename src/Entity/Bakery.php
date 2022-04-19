@@ -21,6 +21,7 @@ class Bakery
      * @ORM\Column(type="integer")
      * @Groups({"get_bakeries_list", "get_bakery_by_id"})
      * @Groups ({"api_user"})
+     * @Groups ({"cool"})
      */
     private $id;
 
@@ -30,7 +31,6 @@ class Bakery
      * @Groups({"get_bakeries_list", "get_bakery_by_id"})
      * @Groups({"api_user"})
      * @Assert\NotBlank
-     * 
      */
     private $name;
 

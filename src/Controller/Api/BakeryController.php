@@ -15,11 +15,13 @@ class BakeryController extends AbstractController
     /**
      * Get the list of all bakeries
      * @Route("/api/bakery", name="api_bakery", methods={"GET"})
+     * 
      * @OA\Response(
      *     response=200,
      *     description="Returns list of all bakeries",
-     *     @Model(type=Bakery::class, groups={"get_bakeries_list"})
+     *  @Model(type=Bakery::class, groups={"get_bakeries_list"})
      * )
+     * 
      * @return Response
      */
     public function bakeryList(BakeryRepository $bakeryRepository): Response
