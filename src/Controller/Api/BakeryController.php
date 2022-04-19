@@ -7,12 +7,19 @@ use App\Repository\BakeryRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Nelmio\ApiDocBundle\Annotation\Model;
+use OpenApi\Annotations as OA;
 
 class BakeryController extends AbstractController
 {
     /**
-     * Method to get the list of all bakeries
+     * Get the list of all bakeries
      * @Route("/api/bakery", name="api_bakery", methods={"GET"})
+     * @OA\Response(
+     *     response=200,
+     *     description="Returns list of all bakeries",
+     *     @Model(type=Bakery::class, groups={"get_bakeries_list"})
+     * )
      * @return Response
      */
     public function bakeryList(BakeryRepository $bakeryRepository): Response
@@ -32,7 +39,7 @@ class BakeryController extends AbstractController
      * @Route("/api/bakery/{id<\d+>}", name="api_bakery_by_id", methods={"GET"})
      * @return Response
      */
-    public function bakeryById(Bakery $bakery = null) :Response
+    public function bakeryById(Bakery $bakery = null): Response
     {
         // if the id doesn't correspond to any bakery
         if ($bakery === null) {
