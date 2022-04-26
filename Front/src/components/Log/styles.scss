@@ -1,0 +1,298 @@
+@use 'src/styles/vars.scss';
+
+
+
+@media screen and (min-width: 1024px) {
+
+.log {
+  background-image: url('./images/background1.jpg');
+  background-size: cover;
+  background-position: center ;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    -webkit-text-fill-color: rgb(255, 255, 255);
+    box-shadow: 0 0 0px 1000px #402218 inset;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+
+  h3 {
+    color: white;
+    font-family: Gravity;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  p {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Gravity;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: left;
+  }
+  .error-text {
+    color: rgb(119, 29, 29);
+    text-shadow: 0 0 1px black;
+  }
+
+  .btn-form {
+    border: none;
+    padding: 15px 20px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: vars.$principal-color;
+    text-align: center;
+    font-size: 0.7em;
+    letter-spacing: 1px;
+    margin-top: 1em;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0 10px white;
+    }
+  }
+
+  .input-form {
+    font-family: Gravity;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.678);
+    color: white;
+    padding: 10px 0;
+    margin-top: 15px;
+
+    &:focus {
+      border-bottom: 2px solid white;
+
+      &::placeholder {
+        color: white;
+      }
+    }
+  }
+  .input-form::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .wrapper-signup {
+    background-color: #402218cf;
+    width: 80%;
+    height: 90%;
+    display: flex;
+    padding: 50px 100px;
+    align-items: center;
+    margin: 0% 10%;
+
+
+    .signup {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 1em;
+      align-items: flex-start;
+      border-right: 1px solid rgba(255, 255, 255, 0.692);
+
+      .input-form{
+        display: flex;
+      }
+
+      p{
+        margin-right: 0.5em;
+      }
+    }
+
+    .signin {
+      padding: 10%;
+      height: 100%;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      p{
+        width: 100%;
+        padding-bottom: 1em;
+      }
+      
+    }
+  }
+  .btn-toggles{
+    display: none;
+  }
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 60px) and (max-width: 1024px) {
+
+  .log {
+    background-image: url('./images/background1.jpg');
+    background-size: cover;
+    background-position: center ;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus {
+      -webkit-text-fill-color: rgb(255, 255, 255);
+      box-shadow: 0 0 0px 1000px #402218 inset;
+      transition: background-color 5000s ease-in-out 0s;
+    }
+  
+    h3 {
+      color: white;
+      font-family: Gravity;
+      font-size: 1.5em;
+      font-weight: 600;
+    }
+    p {
+      color: rgba(255, 255, 255, 0.5);
+      font-family: Gravity;
+      font-size: 1em;
+      font-weight: 500;
+    }
+    .error-text {
+      color: rgb(119, 29, 29);
+      text-shadow: 0 0 1px black;
+    }
+  
+    .btn-form {
+      border: none;
+      padding: 15px 20px;
+      border-radius: 25px;
+      text-transform: uppercase;
+      font-weight: 800;
+      color: #402218;
+      text-align: center;
+      font-size: 0.7em;
+      letter-spacing: 1px;
+      margin-top: 1em;
+  
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 10px white;
+      }
+    }
+  
+    .input-form {
+      font-family: Gravity;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.678);
+      color: white;
+      padding: 10px 0;
+      margin-top: 15px;
+      display: flex;
+  
+      &:focus {
+        border-bottom: 2px solid white;
+  
+        &::placeholder {
+          color: white;
+        }
+      }
+    }
+    .input-form::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+
+    .Inscription{
+
+      .btn-toggles{
+        border: none;
+        padding: 15px 20px;
+        font-weight: 800;
+        color: #402218;
+        text-align: center;
+        font-size: 0.7em;
+      }
+
+      .wrapper-signup {
+        background-color: #402218cf;
+        width: 100%;
+        padding: 10% 10%;
+        display: flex;
+        justify-content: center;
+        
+        .signup {
+          display: none;
+        }
+    
+        .signin {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+
+    .Connexion{
+
+      .btn-toggles{
+        border: none;
+        padding: 15px 20px;
+        font-weight: 800;
+        color: #402218;
+        text-align: center;
+        font-size: 0.7em;
+      }
+
+      .wrapper-signup {
+        background-color: #402218cf;
+        width: 100%;
+        padding: 10% 10%;
+        display: flex;
+    
+        .signin {
+          display: none;
+        }
+    
+        .signup {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+        }
+      }
+    }
+    }
+  }
+
+
+
+ 

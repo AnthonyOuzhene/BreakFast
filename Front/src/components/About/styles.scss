@@ -1,0 +1,41 @@
+@use 'src/styles/vars.scss';
+
+.about {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  overflow-y: scroll;
+
+  h1 {
+    color: black;
+    font-size: 1.6em;
+    margin-top: 20px;
+    font-family: Gravity;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-weight: bolder;
+  }
+
+  .Personne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 200px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+
+.about{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+}

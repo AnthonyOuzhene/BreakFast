@@ -1,0 +1,222 @@
+@media screen and (max-width: 1024px) {
+
+  .bakery-page {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    background-color: #c88a5b73;
+
+
+    .bakery-bakery {
+      width: 100%;
+      height: 35%;
+
+      .bakery-infos {
+
+        .bakery-img {
+          width: 55%;
+          height: 300px;
+          float: left;
+          object-fit: cover;
+          }
+          
+          .bakery-icone{
+            margin-top: 5%;
+            width: 50px;
+            height: 50px;  
+          }
+          .bakery-icone:active{
+            width: 50px;
+            height: 50px;  
+            padding: 1px;
+          }
+
+          .bakery-address{
+            padding-top: 2em;
+          }
+          
+          .bakery-right-side {
+          
+            .bakery-name {
+              width: 45%;
+              float: right;
+              padding: 1em;
+              font-size: 25px;
+            }
+          }
+        }
+      }
+      
+    .bakery-all-products {
+
+      .bakery-search {
+        display: flex;
+        justify-content: space-between;
+
+        .bakery-products {
+          width: 100%;
+          margin-left: 10%;
+          text-align: left;
+          font-weight: bold;
+          text-transform: uppercase;
+          font-size: 20px;
+        }
+      
+        .bakery-location {
+          width: 50%;
+          font-size: 20px;
+        }
+      }
+
+      .bakery-products-list {
+        width: 100%;
+        flex-wrap: wrap;
+      }
+
+      .basket-access{
+        width: 100%;
+        padding: 3em 0em;
+        
+        .bakery-btn-to-basket {
+          border: none;
+          border-radius: 25px;
+          color: #ffffff;
+          background-color: #402218;
+          font-size: 1em;
+          font-weight: 800;
+          letter-spacing: 1px;
+          margin-top: 1em;
+          padding: 15px 20px;
+          text-align: center;
+          text-transform: uppercase;
+        }
+        .bakery-btn-to-basket:hover {
+          border: none;
+          border-radius: 25px;
+          color: #ffffff;
+          background-color: #865439;
+          font-size: 1em;
+          font-weight: 800;
+          letter-spacing: 1px;
+          margin-top: 1em;
+          padding: 15px 20px;
+          text-align: center;
+          text-transform: uppercase;
+        }
+      
+      }
+
+      
+    }
+  }
+}
+  
+@media screen and (min-width: 1024px) {
+
+
+.bakery-page {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  background-color: #c88a5b73;
+
+  .bakery-bakery {
+    width: 100%;
+    height: 35%;
+
+    .bakery-infos {
+
+      .bakery-img {
+        width: 55%;
+        height: 300px;
+        float: left;
+        object-fit: cover;
+      }
+
+      .bakery-icone{
+        margin-top: 2%;
+        width: 50px;
+        height: 50px;  
+      }
+      .bakery-icone:active{
+        width: 50px;
+        height: 50px;  
+        padding: 1px;
+      }
+        
+      .bakery-name {
+        width: 45%;
+        float: right;
+        padding: 1em;
+        font-size: 30px;
+      }
+
+      .bakery-address{
+        padding-top: 1em;
+      }
+    }
+  }
+}
+
+.bakery-all-products {
+
+  .bakery-search {
+    display: flex;
+    justify-content: space-between;
+
+    .bakery-products {
+      width: 100%;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 25px;
+    }
+   
+
+    .bakery-location {
+      width: 50%;
+      font-size: 30px;
+    }
+  }
+ 
+    .bakery-products-list {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    .basket-access{
+      width: 100%;
+      padding: 3em 0em;
+      
+      .bakery-btn-to-basket {
+        border: none;
+        border-radius: 25px;
+        color: #ffffff;
+        background-color: #402218;
+        font-size: 1em;
+        font-weight: 800;
+        letter-spacing: 1px;
+        margin-top: 1em;
+        padding: 15px 20px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      .bakery-btn-to-basket:hover {
+        border: none;
+        border-radius: 25px;
+        color: #ffffff;
+        background-color: #865439;
+        font-size: 1em;
+        font-weight: 800;
+        letter-spacing: 1px;
+        margin-top: 1em;
+        padding: 15px 20px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      
+    }
+  }
+}
+   

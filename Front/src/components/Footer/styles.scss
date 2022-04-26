@@ -1,0 +1,101 @@
+@use 'src/styles/vars.scss';
+
+
+.footer {
+    background-color: black;
+    width: 100vw;
+    border-top: 2px;
+    border-color: vars.$second-color;
+
+    .footer-links {
+        font-size: 1em;
+        color: vars.$second-color;
+
+
+        .footer-navbar {
+            display: flex;
+            justify-content: space-between;
+            margin: 3% 5% 0% 5%;
+
+
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .footer {
+        border-top: solid black 1px ;
+        background-color: vars.$principal-color;
+        width: 100vw;
+        position: absolute;
+        bottom: -13%;
+
+        .footer-links {
+            font-size: 1em;
+            color: vars.$second-color;
+
+            a:hover{
+                color: aliceblue;
+            }
+        }
+    }
+
+    .socials-icons {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0px 20px 5%;
+        .socials {
+            width: 200px;
+            .social{
+                width: 30px;
+                height: 30px;
+                margin-right: 20px;
+            }
+        }
+        .copyright{
+            padding-right: 3em;
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+
+    .footer {
+        padding-top: 1.5em;
+        border-top: solid black 1px ;
+        background-color: vars.$principal-color;
+        width: 100vw;
+        position: absolute;
+        bottom: -13%;
+        font-size: 18px;
+        height: 130px;
+
+        .footer-links {
+            font-size: 1em;
+            color: vars.$second-color;
+
+            a:hover{
+                color: aliceblue;
+            }
+        }
+    }
+
+    .socials-icons {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0px 20px 5%;
+        .socials {
+            width: 200px;
+            .social{
+                width: 20px;
+                height: 20px;
+                margin-right: 20px;
+            }
+        }
+        .copyright{
+            padding-right: 3em;
+            font-size: 18px;
+        }
+    }
+}

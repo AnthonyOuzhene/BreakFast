@@ -1,0 +1,281 @@
+@use 'src/styles/vars.scss';
+
+
+.homepage::-webkit-scrollbar {
+  display: none;
+}
+
+.homepage {
+  .nav-link:hover {
+    cursor: pointer
+  }
+
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: scroll;
+
+  .section-form-adress {
+    background-image: url('./images/background1.jpg');
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: center ;
+    height: 100%;
+    width: 100%;
+
+    .box-form-adresse {
+      background-color: vars.$principal-color;
+      padding: 1em;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 130px;
+      width: 90%;
+      margin: 150px 0;
+
+      h2{
+        margin-bottom: 0.5em;
+      }
+
+      .form-title {
+        font-size: 1.2em;
+        text-transform: uppercase;
+        color: vars.$second-color;
+        display: inline-block;
+      }
+
+      .form-adresse {
+        position: relative;
+
+        
+        .form-adresse-input {
+          background-color: vars.$third-color;
+          width: 80%;
+          border: none;
+          font-size: 1.1em;
+          padding: 0.8em 2em;
+          font-family: Gravity;
+          color: vars.$principal-color;
+        }
+        .form-adresse-input::placeholder {
+          color: vars.$principal-color;    
+        }
+  
+        .listPropositions {
+          background-color: vars.$third-color;
+          margin-top: 15px;
+          position: absolute;
+          top: 80%;
+          left: 10%;
+          width: 80%;
+          box-shadow: 0 0 1px rgb(122, 122, 122);
+  
+          .proposedfield {
+            color: vars.$principal-color;
+            padding: 15px 15px;
+            font-size: 1.1em;
+            font-family: Gravity;
+            text-align: left;
+
+            &:hover {
+              background-color: vars.$principal-color;
+              color: vars.$second-color;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    
+      
+    }
+  }
+
+  .categories {
+    width: 100%;
+    background-color: vars.$principal-color;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .title-category {
+      color: vars.$second-color;
+      font-family: Gravity;
+      padding: 5px;
+      border-bottom: 1px solid vars.$second-color;
+      margin: 2px;
+      text-transform: uppercase;
+    }
+
+    .list-categories {
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      background-color: vars.$principal-color;
+      
+      /* height: 200px; */
+      
+      
+      .category {
+        width: 100%;
+        height: 200px;
+        margin: 5px 0;
+        text-transform: uppercase;
+        /* border: 3px solid vars.$principal-color; */
+
+        .background-div {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          
+          p {
+            color: #ffffff;
+            border-radius: 10px;
+            padding: 15px;
+            font-family: Gravity;
+            font-size: 1.5em;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 5px black;
+          }
+        }
+
+        
+      }
+      
+    }
+    .list-categories .category:nth-child(1) div {
+      background-image: url('./images/categories/amoureux.jpg');
+      background-size: cover;
+      background-position: center ;
+    }
+    .list-categories .category:nth-child(2) div {
+      background-image: url('./images/categories/anniversaire.jpg');
+      background-size: cover;
+      background-position: center ;
+    }
+    .list-categories .category:nth-child(3) div {
+      background-image: url('./images/categories/bio.jpg');
+      background-size: cover;
+      background-position: center ;
+    }
+    .list-categories .category:nth-child(4) div {
+      background-image: url('./images/categories/vegan.jpg');
+      background-size: cover;
+      background-position: center ;
+    }
+    .list-categories .category:nth-child(5) div {
+      background-image: url('./images/categories/entreprise.jpg');
+      background-size: cover;
+      background-position: center ;
+    }   
+    
+  }
+  
+}
+
+@media screen and (min-width: 600px)
+{
+  .homepage{
+    
+
+    .section-form-adress {
+      /* background-size: 100% 150%; */
+      .box-form-adresse {
+        width: 60%;
+      }
+    }
+
+    .categories {
+      /* transform: translateY(170px); */
+      
+      .list-categories {
+        
+        .category {
+          width: 45%;
+          height: 200px;
+          margin: 10px;
+        }
+      }
+      
+      
+    }
+  } 
+}
+
+@media screen and (min-width: 1024px)
+{
+  .homepage{
+    /* overflow-y: scroll; */
+    flex-direction: column;
+
+    .section-form-adress {
+      /* width: 100%; */
+      height: 100%;
+      padding: 80px 0;
+      /* background-size: 100% 150%; */
+      
+      .box-form-adresse {
+        width: 60%;
+      }
+    }
+
+    .categories {
+      /* transform: translateY(170px); */
+     
+      .list-categories {
+        
+        .category {
+          width: 48%;
+          height: 250px;
+          margin: 10px;
+        }
+      }
+      
+      
+    }
+  } 
+}
+
+@media screen and (min-width: 1660px)
+{
+  .homepage{
+    
+
+    .section-form-adress {
+      padding: 120px 0;
+      /* background-size: 100% 200%; */
+      .box-form-adresse {
+        width: 60%;
+      }
+    }
+
+    .categories {
+      /* transform: translateY(170px); */
+      
+      .list-categories {
+        
+        .category {
+          width: 30%;
+          height: 250px;
+          margin: 10px;
+        }
+      }
+      
+      
+    }
+  } 
+}
+
+
+
+
+
+

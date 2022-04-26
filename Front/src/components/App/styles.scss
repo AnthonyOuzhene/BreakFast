@@ -1,0 +1,36 @@
+@font-face {
+  font-family: Gravity;
+  src: url("../../assets/fonts/Gravity-Regular.otf");
+}
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+.app {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.app.menu-active {
+  display: flex;
+  transform: translateX(60%);
+
+  
+}
+.app {
+  z-index: 3;
+  transform: translateX(0%);
+  transition: 1.2s;
+}

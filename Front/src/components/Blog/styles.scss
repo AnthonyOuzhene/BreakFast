@@ -1,0 +1,62 @@
+@use 'src/styles/vars.scss';
+
+
+.blog {
+  height: 100%;
+  font-family: Montserrat;
+  background-image: url('./Images/background-blog.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-y: scroll;
+}
+
+#blog-page__title {
+  color: white;
+  font-size: 1.6em;
+  margin-top: 60px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.blog-post {
+  margin: 3em;
+  background-color: #402218c2;
+  color: white;
+  text-align: left;
+  padding: 2.5em;
+    h2 {
+      font-size: 1.3em;
+      font-weight: 700;
+    }
+    h3 {
+      font-size: 1em;
+    }
+    p{
+      margin-bottom: 1em;
+      margin-left: 2em;
+      line-height: 1.5em;
+    }
+}
+
+.blog-post__title, .blog-post__summary{
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: revert;
+}
+
+.blog-post__date {
+  font-size: 0.9em;
+  margin-right: 1em;
+  margin-left: 2em;
+}
+
+.blog-post__author {
+  font-size: 0.9em;
+}
+
+
+
+
+
+
+

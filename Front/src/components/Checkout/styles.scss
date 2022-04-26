@@ -1,0 +1,456 @@
+@use 'src/styles/vars.scss';
+
+.Checkout-Checkout{
+  font-size: 22px;
+}
+
+
+ @media screen and (min-width: 1px) and (max-width: 1024px){
+  
+.Checkout-Checkout{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  background-image: url('./images/background1.jpg');
+  background-position: 50%;
+  background-size: cover;
+  color: white;
+  overflow: hidden;
+
+  .wrapper-checkout {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: #402218cf; 
+    position: relative;
+
+    .btn-back {
+      position: absolute;
+      top: 10px;
+      left: 15px;
+      transform: scale(1.2);
+      color: rgba(255, 255, 255, 0.719);
+    }
+  }
+  
+  .Checkout-infoPerso{
+    background-color: #4022181a; 
+    border-bottom: solid rgb(255, 255, 255) 1px;
+    display: flex;
+    flex-direction: column;
+    height: 75%;
+
+    input[type="radio"].demo2 {
+      display: none;
+    }
+    
+    input[type="radio"].demo2+label {
+      padding: 0.5rem 1rem;
+      line-height: 1.5;
+      color: white;
+      border: 1px solid transparent;
+      transition: all 0.1s ease-in-out;
+    }
+    
+    input[type="radio"].demo2.demoyes:hover+label {
+      background-color: rgba(255, 255, 255, 0.651);
+      border-color: #4b3223bd;
+      color: vars.$principal-color;
+    }
+    
+    input[type="radio"].demo2.demoyes:checked+label {
+      background-color: white;
+      border-color: #865439;
+      color: vars.$principal-color;
+    
+    }
+    
+    input[type="radio"].demo2.demono:hover+label {
+      background-color: rgba(255, 255, 255, 0.651);
+      border-color: #4b3223bd;
+      color: vars.$principal-color;
+    }
+    
+    input[type="radio"].demo2.demono:checked+label {
+      background-color: white;
+      border-color: #865439;
+      color: vars.$principal-color;
+    }
+
+    .Checkout-verif{
+      
+
+    }
+    .Checkout-ville{
+      padding-bottom: 2em;
+    }
+
+    .Checkout-checkbox{
+      padding-bottom: 2em;
+    }
+
+    .Checkout-commande{
+      display: flex;
+      flex-direction: column;
+      margin-top: 10%;
+      margin-bottom: 10%;
+      overflow-y: scroll;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      
+      li {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 0.8em;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0;
+      }
+    }
+  }
+ 
+ 
+  .lapopup{
+    display: flex;
+    justify-content: center;
+
+    .nopopup{
+      display: none;
+    }
+    
+  .popup{
+    position: absolute;
+    height: 50%;
+    top: 30%;   
+    outline: solid 2px black;
+    background-color: #865439; 
+  
+      .Checkout-confirmation{
+        padding: 2.5em;
+      }
+      .Checkout-etat{
+        padding-bottom: 1em;
+      }
+       
+      .Checkout-icone{
+        height: 100px;
+        margin-bottom: 2em;
+      }
+      .Checkout-heure{
+        padding: 0em 0em 1em 0em;
+      }
+      .Checkout-time{
+        padding: 1em;
+      }
+      .Checkout-btnEchap{
+        z-index: 10;
+        cursor: pointer;
+        font-size: 30px;
+        position: absolute;
+        margin-left: 93%;
+        margin-top: 1%;
+      }
+    }
+  }
+
+
+  .Checkout-droite {
+    background-color: #4022181a;
+    padding-top: 5%;
+    height: 25%;
+    width: 100%;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    .wrapper-total {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      text-align: left;
+
+      .Checkout-Total {
+        width: 100%;
+
+        .Checkout-Finalprice {
+          margin-top: 10px;
+        }
+      }
+  
+      .Checkout-Totaux {
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+  
+        .Checkout-ligne {
+          margin-bottom: 5px;
+        }
+  
+        .Checkout-Finalprice {
+          margin-top: 10px;
+        }
+      }
+    }
+  
+  }
+
+    
+
+
+    .Checkout-Finalprice{
+      display: flex;
+    }
+  }
+}
+.Checkout-btnPayer{
+    border: none;
+    width: 150px;
+    height: 50px;
+    padding: 15px 20px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: vars.$principal-color;
+    text-align: center;
+    font-size: 0.7em;
+    letter-spacing: 1px;
+    margin-top: 1em;
+    background-color: white;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0 10px white;
+    }
+}
+.Checkout-btnPayer:hover{
+background-color: #4b3223bd;
+color: aliceblue;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+
+.Checkout-Checkout{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 3% 15%;
+  background-image: url('./images/background1.jpg');
+  background-position: 50%;
+  background-size: cover;
+  color: white;
+  overflow-y: hidden;
+  position: relative;
+
+  .wrapper-checkout {
+    display: flex;
+    width: 100%;
+    padding: 50px;
+    background-color: #402218cf; 
+    position: relative;
+
+    .btn-back {
+      position: absolute;
+      top: 10px;
+      left: 15px;
+      transform: scale(1.1);
+      color: rgba(255, 255, 255, 0.788);
+
+      &:hover {
+        color: white;
+        cursor: pointer;
+      }
+    }
+
+    .Checkout-infoPerso{
+      width: 50%;
+      
+      border-right: solid rgb(255, 255, 255) 1px;
+      display: flex;
+      flex-direction: column;
+  
+      input[type="radio"].demo2 {
+        display: none;
+      }
+      input[type="radio"].demo2 + label {
+        padding: 0.5rem 1rem;
+        line-height: 1.5;
+        color: rgb(255, 255, 255);
+        border: 1px solid transparent;
+        transition: all 0.1s ease-in-out;
+        margin: 0em 20%;
+      }
+      input[type="radio"].demo2.demoyes:hover + label {
+        background-color: rgba(255, 255, 255, 0.651);
+        border-color: #4b3223bd;
+        color: vars.$principal-color;
+      }
+      input[type="radio"].demo2.demoyes:checked + label {
+        background-color: white;
+        border-color: #865439;
+        color: vars.$principal-color;
+      }
+      input[type="radio"].demo2.demono:hover + label {
+        background-color: rgba(255, 255, 255, 0.651);
+        border-color: #4b3223bd;
+        color: vars.$principal-color;
+      }
+      input[type="radio"].demo2.demono:checked + label {
+        background-color: white;
+        border-color: #865439;
+        color: vars.$principal-color;
+      }
+  
+      .Checkout-verif{
+        
+  
+      }
+      .Checkout-ville{
+        padding-bottom: 2em;
+      }
+  
+      .Checkout-checkbox{
+        padding-bottom: 2em;
+      }
+  
+      .Checkout-commande{
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 40px;
+        overflow-y: scroll;
+
+  
+        li.element-list-products {
+          margin-bottom: 5px;
+          font-weight: 300;
+          font-size: 0.9em;
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+        }
+      }
+    }
+  }
+  
+  
+ 
+ 
+  .lapopup{
+
+    .nopopup{
+      display: none;
+    }
+    
+  .popup{
+    position: absolute;
+    height: 60%;
+    width: 50%;
+    top: 30%;   
+    left: 25%;   
+    outline: solid 2px black;
+    background-color: #865439; 
+  
+      .Checkout-confirmation{
+        padding: 2.5em;
+      }
+      .Checkout-etat{
+        padding-bottom: 1em;
+      }
+       
+      .Checkout-icone{
+        height: 100px;
+        margin-bottom: 2em;
+      }
+      .Checkout-heure{
+        padding: 0em 0em 1em 0em;
+      }
+      .Checkout-time{
+        padding: 1em;
+      }
+      .Checkout-btnEchap{
+        z-index: 10;
+        cursor: pointer;
+        font-size: 30px;
+        position: absolute;
+        margin-left: 95%;
+        margin-top: 1%;
+
+        .active:hover {
+          color: white;
+        }
+
+       
+      }
+    }
+  }
+
+  .Checkout-droite{
+    width: 50%;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .wrapper-total {
+      display: flex;
+    }
+
+    .Checkout-Total{
+    
+
+    }
+    .Checkout-Totaux{
+
+    }
+
+    .Checkout-ligne{
+      margin: 1em;
+    }
+  }
+}
+.Checkout-btnPayer{
+    border: none;
+    width: 150px;
+    padding: 15px 20px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: vars.$principal-color;
+    text-align: center;
+    font-size: 0.7em;
+    letter-spacing: 1px;
+    margin-top: 1em;
+    background-color: white;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0 10px white;
+      background-color: white;
+      color: vars.$principal-color;
+    }
+}
+li.element-list-products {
+  span {
+    font-weight: 300;
+  }
+}
+}
+
+

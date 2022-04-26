@@ -1,0 +1,28 @@
+@use 'src/styles/vars.scss';
+
+
+.formules {
+  height: 100%;
+  width: 100%;
+  font-family: Montserrat;
+  background-image: url('./Images/background-formules.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-y: scroll;
+}
+
+.formules-title {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: white;
+  margin-top: 2em;
+}
+
+#formules-page__title {
+  color: white;
+  font-size: 1.6em;
+  margin-top: 60px;
+  font-weight: 800;
+  text-transform: uppercase;
+  background-image: none;
+}
